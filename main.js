@@ -9,14 +9,14 @@ const passeggerocarrozza = document.getElementById('passeggero-carrozza');
 const passeggerocodice = document.getElementById('passeggero-codice');
 const passeggerocosto = document.getElementById('passeggero-costo');
 const modulo = document.getElementById('ticket-form')
-    modulo.addEventListener('submit',(event) => {
+   
+
+modulo.addEventListener('submit',(event) => {
    event.preventDefault();
         const nomeValue = nome.value;
     const kmValue = Number(km.value);
     const etaValue = fasciaeta.value;
-    console.log(nomeValue)
-    console.log(kmValue)
-    console.log(etaValue)
+ 
 
     if (nomeValue === '' || !Number.isFinite(kmValue) || kmValue <= 0) {
         alert('Inserisci un nome valido e un numero di Km maggiore di 0.');
